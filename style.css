@@ -1,0 +1,121 @@
+.headerFixedBar{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    width:100%;
+    height:auto;
+ 
+ } 
+ 
+ .headerLogoText{
+    margin-top: 1px;
+     color:#3d5a80;
+     font-size: 1.3em;
+     line-height: 1.2em;
+ }
+ 
+ .headerLogoText:hover{
+     color:#293241; 
+     
+     text-decoration: none;
+     font-size:1.3em;
+     font-weight:500;
+ }
+ 
+ .headerLogoImage{
+     width: 25px;
+     height: 25px;
+     margin-left: 5px;
+     margin-right: 5px;
+ }
+
+ .themeButton{
+    
+    color:#e0fbfc; ;
+    background-color:#3d5a80; 
+    
+     border-color: black;
+     border-width: thin;
+     padding: 5px;
+ }
+
+ body{
+    background: color #e0fbfc;
+    margin-top:75px;
+    margin-bottom:25px;
+    margin-left:5px;
+    margin-right:5px;
+} 
+
+html{                           /* background for entire page */
+
+    background-color:#e0fbfc;
+}
+.forumBackground{
+    background-color:white ;
+    color: black;
+    /* margin-bottom:10px ; */
+}
+
+.pullLeft{
+    float:left;
+    display:inline-block;
+
+}
+
+.pullRight{
+ float:right;
+display:inline-block;
+}
+
+.paginationArrow{
+    color:#9e9e9e;
+    padding-right:5px;
+    padding-left:5px;
+
+}
+.paginationBar{
+    padding:15px;
+
+}
+.columnPad{
+    margin-top:15px;
+    margin-left:5px;
+    margin-bottom:10px;
+
+}
+
+.h1{
+    font-size: 1.7cm;
+    color: violet;
+}
+.h2{
+    font-size: 1.5cm;
+    color: violet;
+}
+.h3{
+    font-size: 1.2cm;
+    color: violet;
+
+}
+.h4{
+    font-size: 1.3cm;
+    color: violet;
+
+}
+.a{
+    color:#3d5a80;
+    text-decoration:none;
+}
+
+.a:hover{
+    color:#3d5a80;
+    font-weight:500;
+    text-decoration:none;
+}
