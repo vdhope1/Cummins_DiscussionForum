@@ -1,0 +1,47 @@
+.headerFixedBar{
+   padding-left: 20px;
+   padding-right: 20px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+
+} 
+
+.headerLogoText{
+  
+    color:#3d5a80;
+    font-size: 1.3em;
+    line-height: 1.2em;
+}
+
+.headerLogoText :hover{
+    color:#3d5a80;
+    text-decoration: none;
+    font-size:1.3em;
+    font-weight:500;
+}
+
+.headerLogoImage{
+    width: 75px;
+    height: 75px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.themeButton{
+   
+    background-color:#3d5a80 ;
+    color: white;
+    border-color: black;
+    border-width: thin;
+    padding: 5px;
+}
+
+.themeButton{
+   background-color: white;
+   color:#98c1d9;
+   border-width: thin;
+   border-color:#3d5a80;
+   font-weight: 700;
+
+
+}
