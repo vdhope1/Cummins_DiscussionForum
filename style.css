@@ -1,9 +1,10 @@
-.headerFixedBar {
+.headerFixedBar {                       /* header bar design */
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: white;
+  background-color:#203573;
+  /* background-color:white; */
   position: fixed;
   top: 0;
   left: 0;
@@ -12,21 +13,22 @@
   height: auto;
 }
 
-.headerLogoText {
+.headerLogoText {                         /* Website name */
   margin-top: 1px;
-  color: #334299;
+  color:white;
   font-size: 1.3em;
   line-height: 1.2em;
 }
 
 .headerLogoText:hover {
-  color: #252a72;
+ /* color: #252a72;  */
+  color:#ebf9ff;
   text-decoration: none;
   font-size: 1.3em;
   font-weight: 500;
 }
 
-.headerLogoImage {
+.headerLogoImage {                         /* logo */
   width: 25px;
   height: 25px;
   margin-left: 5px;
@@ -47,19 +49,21 @@
   vertical-align: middle;
 }
 
-.themeButton {
+.themeButton {                           /* Logout button */
   color: white;
-  background-color: #061d68;
-  border-color: black;
+  background-color:#112769; 
+  border-color:#ebf9ff;
   border-width: thin;
   padding: 5px;
 }
 
 .themeButton:hover {
-  background-color: white;
+  /*background-color:#ffbe5c; */
+  background-color:#ebf9ff;
   color: #061d68;
   border-width: thin;
   font-weight: 400!important;
+  
 }
 
 .themeButton :focus {
@@ -67,7 +71,9 @@
 }
 
 html {
-  background-color: #ecfbfc;
+   background-color: #ecfbfc;   
+ 
+
 }
 
 .forumBackground {
@@ -76,14 +82,23 @@ html {
   margin-bottom: 10px;
 }
 
-.paginationArrow {
+.paginationArrow {          /*icons currently not working  */
   color: #9e9e9e;
   padding-right: 5px;
   padding-left: 5px;
 }
 
 .paginationBar {
-  padding: 15px;
+  margin-top: 10px;
+  padding: 5px;
+  
+ 
+}
+
+.search-box{
+
+ 
+    margin-left: 920px;
 }
 
 .categoryModule {
@@ -100,13 +115,15 @@ html {
 }
 
 .forumModule {
-  background-color: white;
+  background-color: white;  
+  /* background-color: #203573;  */
   color: black;
-  margin-bottom: 10px;
+  border-radius: 25px;
 }
 
 .forumMargin {
   margin-bottom: 10px;
+  
 }
 
 .forumTable {
@@ -142,9 +159,11 @@ body {
   margin-right: 5px;
 }
 
-h1 {
+h1 {                            /* Category name */
   font-size: 1.7em;
-  color: #334299;
+ /* color: #334299; */
+   color:#334299;
+
 }
 h2 {
   font-size: 1.5em;
@@ -159,9 +178,10 @@ h4 {
   color: #334299;
 }
 
-a {
+a {                              /* Home button */
   color: #3d5a80;
   text-decoration: none;
+  margin-left: 20px;
 }
 a:hover {
   color: #3d5a80;
@@ -180,3 +200,13 @@ a:hover {
   color: #061d68;
   margin-top: 5px;
 }
+
+
+/*colour palette 
+Alice blue (light)       : #ebf9ff
+St patricks blue(medium) : #203573
+Royal blue (dark)        : #112769
+Gunmetal (e-dark)        : #293241
+Burnt Sienna (sh-red)    : #ee6c4d
+
+*/
