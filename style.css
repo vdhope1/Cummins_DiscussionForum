@@ -1,9 +1,19 @@
-.headerFixedBar {                       /* header bar design */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,800");
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #ebf9ff;
+}
+
+.headerFixedBar {
+  /* header bar design */
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color:#203573;
+  background-color: #203573;
   /* background-color:white; */
   position: fixed;
   top: 0;
@@ -13,35 +23,46 @@
   height: auto;
 }
 
-.headerLogoText {                         /* Website name */
-  margin-top: 1px;
-  color:white;
+.headerLogoText {
+  /* Website name */
+  margin: 2px;
+  color: white;
   font-size: 1.3em;
   line-height: 1.2em;
 }
 
 .headerLogoText:hover {
- /* color: #252a72;  */
-  color:#ebf9ff;
+  color: #ebf9ff;
   text-decoration: none;
   font-size: 1.3em;
-  font-weight: 500;
+  font-weight: initial;
+  text-shadow: 0 0 7px aliceblue;
 }
 
-.headerLogoImage {                         /* logo */
-  width: 25px;
-  height: 25px;
-  margin-left: 5px;
-  margin-right: 5px;
+.headerLogoImage {
+  /* logo */
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  border-radius: 50%;
 }
 
 .pullLeft {
-    float: left;
+  float: left;
+}
+.pullLeft h2 {
+  display: inline-block;
+}
+.pullLeft > .fa-angle-down:before {
+  font-size: x-large;
+  font-weight: bold;
+  color: #334299;
 }
 
 .pullRight {
-    float: right;
-    display: block;
+  float: right;
+  display: block;
+  margin-right: 2%;
 }
 
 .vMiddle {
@@ -49,40 +70,44 @@
   vertical-align: middle;
 }
 
-.themeButton {                           /* Logout button */
+.themeButton {
+  /* Logout button */
   color: white;
-  background-color:#112769; 
-  border-color:#ebf9ff;
-  border-width: thin;
-  padding: 5px;
+  background-color: #203573;
+  border: 1px solid #203573;
+  background-image: linear-gradient(to right, #203573, #0e6e97, #203573);
+  box-shadow: 0 4px 15px 0 rgba(49, 102, 182, 0.75);
+  padding: 5px 7px;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}:focus {
+  box-shadow: none!important;
 }
 
 .themeButton:hover {
-  /*background-color:#ffbe5c; */
-  background-color:#ebf9ff;
+  background: #ebf9ff;
   color: #061d68;
   border-width: thin;
-  font-weight: 400!important;
-  
+  font-weight: 400 !important;
+  background-position: 100% 0;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .themeButton :focus {
   outline: 0;
 }
 
-html {
-   background-color: #ecfbfc;   
- 
-
-}
-
 .forumBackground {
-  background-color: white;
+  background-image: #fff;
   color: black;
   margin-bottom: 10px;
 }
 
-.paginationArrow {          /*icons currently not working  */
+.paginationArrow {
+  /*icons currently not working  */
   color: #9e9e9e;
   padding-right: 5px;
   padding-left: 5px;
@@ -91,15 +116,11 @@ html {
 .paginationBar {
   margin-top: 10px;
   padding: 5px;
-  
- 
 }
-
-.search-box{
-
- 
-    margin-left: 920px;
-}
+/*
+.search-box {
+  margin-left: 920px;
+}*/
 
 .categoryModule {
   color: black;
@@ -115,15 +136,16 @@ html {
 }
 
 .forumModule {
-  background-color: white;  
+  background-color: white;
   /* background-color: #203573;  */
   color: black;
   border-radius: 25px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25), 0 1px 1px rgba(0, 0, 0, 0.22);
+
 }
 
 .forumMargin {
   margin-bottom: 10px;
-  
 }
 
 .forumTable {
@@ -145,6 +167,14 @@ html {
   padding: 5px;
 }
 
+.forumTable td> a {
+  margin: 0;
+}
+.forumTable a:hover {
+  font-weight: normal;
+  color: #061d68;
+}
+
 .columnPad {
   margin-top: 15px;
   margin-left: 5px;
@@ -159,11 +189,10 @@ body {
   margin-right: 5px;
 }
 
-h1 {                            /* Category name */
+h1 {
+  /* Category name */
   font-size: 1.7em;
- /* color: #334299; */
-   color:#334299;
-
+  color: #334299;
 }
 h2 {
   font-size: 1.5em;
@@ -178,7 +207,8 @@ h4 {
   color: #334299;
 }
 
-a {                              /* Home button */
+a {
+  /* Home button */
   color: #3d5a80;
   text-decoration: none;
   margin-left: 20px;
@@ -189,10 +219,6 @@ a:hover {
   text-decoration: none;
 }
 
-.forumTable a:hover {
-  font-weight: normal;
-  color: #061d68;
-}
 .newDiscussionText {
   height: auto;
   width: 100%;
@@ -200,7 +226,11 @@ a:hover {
   color: #061d68;
   margin-top: 5px;
 }
-
+@media (max-width: 576px) {
+  html {
+    padding: 2%;
+  }
+}
 
 /*colour palette 
 Alice blue (light)       : #ebf9ff

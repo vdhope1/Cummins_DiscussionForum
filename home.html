@@ -13,28 +13,27 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <!--Search box implementation-->
-
+<!--
 <header>
 
     <div class="search-box">
-       <div>
-           <select name=""id=""disabled="disabled">
-               <option value="newDiscussionTitle">Discussion</option>  
-           </select>
-           <input type="text" name="q"id="" placeholder="search ...">
-           <button><i class="fa fa-search"style="font-sstyle:48px;"></i></button>
-       </div>
-
+        <div>
+            <select name="" id="discussionbox" disabled="disabled">
+                <option value="newDiscussionTitle">Discussion</option>
+            </select>
+            <input type="text" name="search-box" id="" placeholder="Search ...">
+            <button><i class="fa fa-search" style="font-style:48px;"></i></button>
+        </div>
     </div>
 
 </header>
-
+-->
 <div class="headerFixedBar">
     <div class="row">
         <div class="col-lg-12">
-            <div class="pullLeft" style="margin-top:5px;">
+            <div class="pullLeft">
                 <a class="headerLogoText" href="home.html" title="CumminsForum.com">
-                    <img class="headerLogoImage" src="Forumlogo.png">Cummins_Forum
+                    <img class="headerLogoImage" src="Forumlogo.png" alt="Logo">Cummins_Forum
                 </a>
             </div>
             <div class="pullRight">
@@ -46,7 +45,7 @@
 
 <body>
     <!--start of forum structure layout-->
-    <div class="container">
+    <div class="container p-sm-3 p-md-0">
         <div class="row">
             <div class="col-lg-12 paginationBar forumModule forumMargin">
                 <a href="#">Home</a> <!-- <i class="fa fa-chevron-circle-right paginationArrow"></i> -->
@@ -57,7 +56,8 @@
             <a href="#" onclick="showDiscussions(1);">
                 <div class="col-lg-12 columnPad">
                     <div class="pullLeft">
-                        <h1>Category Name</h1>
+                        <h2>Category Name </h2>
+                        <i class='fa fa-angle-down drop_down_1 fa'></i>
                     </div>
                     <div class="pullRight">
                         <a id="startDiscussionButton_1" class="btn btn-primary themeButton" href="#"
@@ -136,7 +136,8 @@
             <a href="#" onclick="showDiscussions(2);">
                 <div class="col-lg-12 columnPad">
                     <div class="pullLeft">
-                        <h1>Category Name</h1>
+                        <h2>Category Name </h2>
+                        <i class='fa fa-angle-down drop_down_2 fa'></i>
                     </div>
                     <div class="pullRight">
                         <a id="startDiscussionButton_2" class="btn btn-primary themeButton" href="#"
@@ -215,10 +216,16 @@
     <script>
         function showDiscussions(cat_id) {
             var html_id = "#cat_discussion_" + cat_id;
+            var dropdownid = ".drop_down_" + cat_id;
+            console.log(dropdownid);
             if ($(html_id).css("display") == 'block') {
                 $(html_id).css("display", "none");
+                $(dropdownid).removeClass("fa fa-angle-up");
+                $(dropdownid).addClass("fa-angle-down");
             } else {
                 $(html_id).css("display", "block");
+                $(dropdownid).addClass("fa fa-angle-up");
+                $(dropdownid).removeClass("fa-angle-down");
             }
         }
 

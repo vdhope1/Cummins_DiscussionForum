@@ -1,9 +1,15 @@
-function showDiscussions(cat_id){
+function showDiscussions(cat_id) {
 	var html_id = "#cat_discussion_" + cat_id;
-	if($(html_id).css("display") == 'block') {
+	var dropdownid = ".drop_down_" + cat_id;
+	console.log(dropdownid);
+	if ($(html_id).css("display") == 'block') {
 		$(html_id).css("display", "none");
+		$(dropdownid).removeClass("fa fa-angle-up");
+		$(dropdownid).addClass("fa fa-angle-down");
 	} else {
 		$(html_id).css("display", "block");
+		$(dropdownid).addClass("fa fa-angle-up");
+		$(dropdownid).removeClass("fa fa-angle-down");
 	}
 }
 
@@ -17,5 +23,4 @@ function startDiscussion(cat_id){
 		$(html_id).css("display", "block");
 		$(button_id).text("Cancel");
 	}
-
 }
