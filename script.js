@@ -4,12 +4,12 @@ function showDiscussions(cat_id) {
 	console.log(dropdownid);
 	if ($(html_id).css("display") == 'block') {
 		$(html_id).css("display", "none");
-		$(dropdownid).removeClass("fa fa-angle-up");
-		$(dropdownid).addClass("fa fa-angle-down");
+		$(dropdownid).removeClass("fa-angle-up");
+		$(dropdownid).addClass("fa-angle-down");
 	} else {
 		$(html_id).css("display", "block");
-		$(dropdownid).addClass("fa fa-angle-up");
-		$(dropdownid).removeClass("fa fa-angle-down");
+		$(dropdownid).addClass("fa-angle-up");
+		$(dropdownid).removeClass("fa-angle-down");
 	}
 }
 

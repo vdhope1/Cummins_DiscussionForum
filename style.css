@@ -53,7 +53,8 @@ html, body {
 .pullLeft h2 {
   display: inline-block;
 }
-.pullLeft > .fa-angle-down:before {
+.pullLeft > .fa-angle-down:before,
+.pullLeft > .fa-angle-up:before {
   font-size: x-large;
   font-weight: bold;
   color: #334299;
@@ -129,10 +130,8 @@ html, body {
 }
 
 .forumPad {
-  padding-top: 5px;
-  padding-bottom: 20px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding: 0px 5px 20px;
+  margin-bottom: 20px;
 }
 
 .forumModule {
