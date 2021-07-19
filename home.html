@@ -15,22 +15,7 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
-<!--Search box implementation-->
-<!--
-<header>
 
-    <div class="search-box">
-        <div>
-            <select name="" id="discussionbox" disabled="disabled">
-                <option value="newDiscussionTitle">Discussion</option>
-            </select>
-            <input type="text" name="search-box" id="" placeholder="Search ...">
-            <button><i class="fa fa-search" style="font-style:48px;"></i></button>
-        </div>
-    </div>
-
-</header>
--->
 <div class="headerFixedBar">
     <div class="row">
         <div class="col-lg-12">
@@ -40,12 +25,32 @@
                 </a>
             </div>
             <div class="pullRight">
-                <a class="btn btn-primary themeButton" href="home.html?logout" title="CumminsForum.com">Logout</a>
+                <a class="logout btn btn-primary themeButton" href="home.html?logout" title="CumminsForum.com">Logout</a>
             </div>
         </div>
     </div>
 </div>
 
+<!--Search box implementation-->
+<div class="row justify-content-center">
+    <div class="container m-2">
+        <div class="pullLeft dropdown">
+            <button class="btn btn-primary themeButton">
+                Categories 
+                <i class='drop_down_1 fa fa-angle-down'></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Topic 1</a>
+                <a href="#">Topic 2</a>
+                <a href="#">Topic 3</a>
+            </div>
+        </div>
+        <div class="searchBox pullRight">
+            <input class="searchInput" type="text" name="" id="" placeholder="Search...">
+            <button class="searchButton"><i class="fa fa-search"></i></button>
+        </div>
+    </div>
+</div>
 <body>
     <!--start of forum structure layout-->
     <div class="container p-sm-3 p-md-0">
@@ -56,18 +61,18 @@
         </div>
 
         <div id="category_1" class="row forumModule forumMargin">
-            <a href="#" onclick="showDiscussions(1);">
-                <div class="col-lg-12 columnPad">
+            <div class="col-lg-12 columnPad">
+                <a href="#" onclick="showDiscussions(1);">
                     <div class="pullLeft">
                         <h2>Category Name </h2>
                         <i class='drop_down_1 fa fa-angle-down'></i>
                     </div>
-                    <div class="pullRight">
-                        <a id="startDiscussionButton_1" class="btn btn-primary themeButton" href="#"
-                            onclick="startDiscussion(1);">Start Discussion</a>
-                    </div>
+                </a>
+                <div class="pullRight">
+                    <a id="startDiscussionButton_1" class="btn btn-primary themeButton" href="#"
+                        onclick="startDiscussion(1);">Start Discussion</a>
                 </div>
-            </a>
+            </div>
         </div>
 
         <div id="cat_new_discussion_1" class="row forumPad" style="display:none;">
@@ -75,9 +80,11 @@
                 <form>
                     <div class="form-group">
                         Title:
-                        <input type="text" title="Title" placeholder="Title" name="newDiscussionTitle" class="form-control" size="40" />
+                        <input type="text" title="Title" placeholder="Title" name="newDiscussionTitle"
+                            class="form-control" size="40" />
                         Content:
-                        <textarea class="newDiscussionText" title="newDiscussionText" placeholder="Describe your issue in brief" name="newDiscussionText" rows="6"></textarea>
+                        <textarea class="newDiscussionText" title="newDiscussionText"
+                            placeholder="Describe your issue in brief" name="newDiscussionText" rows="6"></textarea>
                         <div class="pullRight">
                             <a id="submitButton_1" class="btn btn-primary themeButton" href="#" onclick="">Submit</a>
                         </div>
@@ -139,18 +146,18 @@
         </div>
 
         <div id="category_2" class="row forumModule forumMargin">
-            <a href="#" onclick="showDiscussions(2);">
-                <div class="col-lg-12 columnPad">
+            <div class="col-lg-12 columnPad">
+                <a href="#" onclick="showDiscussions(2);">
                     <div class="pullLeft">
                         <h2>Category Name </h2>
                         <i class='drop_down_2 fa fa-angle-down'></i>
                     </div>
-                    <div class="pullRight">
-                        <a id="startDiscussionButton_2" class="btn btn-primary themeButton" href="#"
-                            onclick="startDiscussion(2);">Start Discussion</a>
-                    </div>
+                </a>
+                <div class="pullRight">
+                    <a id="startDiscussionButton_2" class="btn btn-primary themeButton" href="#"
+                        onclick="startDiscussion(2);">Start Discussion</a>
                 </div>
-            </a>
+            </div>
         </div>
 
         <div id="cat_new_discussion_2" class="row forumPad" style="display:none;">
@@ -158,9 +165,11 @@
                 <form>
                     <div class="form-group">
                         Title:
-                        <input type="text" title="Title" placeholder="Title" name="newDiscussionTitle" class="form-control" size="40" />
+                        <input type="text" title="Title" placeholder="Title" name="newDiscussionTitle"
+                            class="form-control" size="40" />
                         Content:
-                        <textarea title="newDiscussionText" placeholder="Describe your issue in brief" class="newDiscussionText" name="newDiscussionText" rows="6"></textarea>
+                        <textarea title="newDiscussionText" placeholder="Describe your issue in brief"
+                            class="newDiscussionText" name="newDiscussionText" rows="6"></textarea>
                         <div class="pullRight">
                             <a id="submitButton_2" class="btn btn-primary themeButton" href="#" onclick="">Submit</a>
                         </div>
